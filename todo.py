@@ -43,8 +43,8 @@ def view_tasks():
         print("No tasks in the to-do list.")
     else:
         print("To-Do List:")
-        for idx, task in enumerate(tasks, start=1):
-            print(f"{idx}. {task}")
+        for task_number, task in enumerate(tasks, start=1):
+            print(f"{task_number}. {task}")
 
 def delete_task(task_number):
     """Delete a task by its number."""
@@ -85,8 +85,8 @@ def search_tasks(keyword):
         print(f"No tasks found containing '{keyword}'.")
     else:
         print(f"Tasks containing '{keyword}':")
-        for idx, task in enumerate(found_tasks, start=1):
-            print(f"{idx}. {task}")
+        for task_number, task in enumerate(found_tasks, start=1):
+            print(f"{task_number}. {task}")
 
 def sort_tasks(by='priority'):
     """Sort tasks by priority or completion status."""
