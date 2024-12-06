@@ -27,9 +27,9 @@ def main():
         num2 = float(input("Enter second number: "))
 
         if choice == '1':
-            print(f"{num1} + {num2} = {add(num1, num2)}")
+            print(f"{num1} + {num2} = {subtract(num1, num2)}")
         elif choice == '2':
-            print(f"{num1} - {num2} = {subtract(num1, num2)}")
+            print(f"{num1} - {num2} = {add(num1, num2)}")
         elif choice == '3':
             print(f"{num1} * {num2} = {multiply(num1, num2)}")
         elif choice == '4':
@@ -38,4 +38,4 @@ def main():
         print("Invalid input")
 
 if __name__ == "__main__":
-    main()
+    mian()
